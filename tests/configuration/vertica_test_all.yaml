@@ -1,0 +1,66 @@
+name: test
+
+objects:
+  schema: 
+  - Elysium
+  - sandbox
+  - Compliance
+
+  tables:
+  - Elysium.FINGAM_Transactions
+  - Elysium.FINGAM_Orders
+  - Elysium.FINGAM_Executions_T
+  - Elysium.FINGAM_Enrichments
+  - Elysium.FINGAM_Enrichments_Rejected
+  - Elysium.FINGAM_ComplexTrades
+  - Elysium.FINGAM_Orders_Rejected
+  - Elysium.FINGAM_Busts_T
+  - Elysium.FINSECMM_Orders
+  - Elysium.FINSECMM_Transactions
+  - Elysium.FINSECMM_Executions_T
+  - Elysium.FINSECMM_Busts_T
+  - Elysium.FINSECMM_Quotes
+  - Elysium.FINSECMM_Enrichments
+  - Elysium.FINSECMM_Enrichments_Rejected
+  - Elysium.FINSECMM_ComplexTrades
+  - Elysium.TKey_Mapping_T
+  - Elysium.TKey_Updates
+  - Elysium.BookmarkStore
+  - Elysium.Sweeper_Bookmark
+  - Elysium.TKEY_LATEST_MAPPINGS_T
+  - Elysium.TKey_Cancel_T
+  - Elysium.TKey_Cancel_All_T
+  - Compliance.DeskLevelUser
+  - Compliance.DeskLevelUserDB
+  - Compliance.OverTheEdgeUser
+  - Compliance.OverTheEdgeUserDB
+  - sandbox.TKEY_LATEST_MAPPINGS_T
+
+
+  partitioning_columns:
+  - Elysium.FINGAM_Transactions.ID
+  - Elysium.FINGAM_Orders.ID
+  - Elysium.FINGAM_Executions_T.ID
+  - Elysium.FINGAM_Enrichments.ID
+  - Elysium.FINGAM_Enrichments_Rejected.ID
+  - Elysium.FINGAM_ComplexTrades.ID
+  - Elysium.FINGAM_Orders_Rejected.ID
+  - Elysium.FINGAM_Busts_T.ID
+  - Elysium.FINSECMM_Orders.ID
+  - Elysium.FINSECMM_Transactions.ID
+  - Elysium.FINSECMM_Executions_T.ID
+  - Elysium.FINSECMM_Busts_T.ID
+  - Elysium.FINSECMM_Quotes.ID
+  - Elysium.FINSECMM_Enrichments.ID
+  - Elysium.FINSECMM_ComplexTrades.ID
+  - Elysium.TKey_Mapping_T.ID
+  - Elysium.TKey_Updates.ID
+  - Elysium.BookmarkStore.CLOCK_TIMESTAMP
+  - Elysium.TKEY_LATEST_MAPPINGS_T.ID
+  - Elysium.TKey_Cancel_T.ID
+  - Elysium.TKey_Cancel_All_T.ID
+  - Compliance.DeskLevelUser.MartModifiedDate
+  - Compliance.DeskLevelUserDB.MartModifiedDate
+  - Compliance.OverTheEdgeUser.MartModifiedDate
+  - Compliance.OverTheEdgeUserDB.MartModifiedDate
+  - sandbox.TKEY_LATEST_MAPPINGS_T.ID

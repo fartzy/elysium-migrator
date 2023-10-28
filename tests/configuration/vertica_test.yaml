@@ -1,0 +1,9 @@
+name: test
+
+objects:
+  tables:
+  - Elysium.FINGAM_Transactions
+
+  partitioning_columns:
+  - Elysium.FINGAM_Transactions.ID
+
