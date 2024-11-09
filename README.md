@@ -4,7 +4,7 @@
 The object of this is to migrate Elysium Data from Vertica to Yellowbrick. This code creates a CLI application to migrate data from vertica to yellowbrick. In summary, `export` will pull data from vertica, and drop it in a linux directory, and the `import` command will take that data and load it into YB.
 
 ## Inspiration ##
-This application was used heavily at one of the leading market making firms in the world.  As the firm migrated dozens of databases from Vertica to YellowBrick, this application was used more and more.
+This application was started as a grassroots project and used heavily at one of the leading market making firms in the world.  As the firm migrated dozens of databases from Vertica to YellowBrick, this application was used more and more.
 
 ## Quick Start ##
 
